@@ -11,7 +11,7 @@ go get github.com\alex-rufo\metrix
 
 ```
 m := monitor.New()
-m.AddProvider(datadog.New("127.0.0.1:500"))
+m.AddProvider(statsd.New("127.0.0.1:500"))
 ```
 
 ### Agent
@@ -24,6 +24,7 @@ The following providers are already built in for you:
  - DataDog
  - RedShift
  - Elasticsearch
+ - Statsd
  - StdOut
 
 ### Add more provider
