@@ -1,0 +1,9 @@
+namespace: "with_config"
+defaultTags: 
+  "tag_1": "key_1"
+  "tag_2": 2
+providers:
+  - statsd:
+      address: "127.0.0.1:8125"
+      rate: 1
+  - stdout:
